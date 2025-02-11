@@ -44,6 +44,7 @@ class MenuBarController: NSObject {
     }
     
     private func updateMenu() {
+        print("Updating menu with \(stories.count) stories")
         guard let menu = statusItem.menu else { return }
         menu.removeAllItems()
         
@@ -65,6 +66,8 @@ class MenuBarController: NSObject {
             item.representedObject = story.url
             menu.addItem(item)
         }
+        
+        print("Menu updated with \(stories.count) items")
     }
     
     @objc private func openStory(_ sender: NSMenuItem) {
@@ -93,9 +96,13 @@ class MenuBarController: NSObject {
         
         let keywordsField = NSTextField(frame: NSRect(x: 0, y: 0, width: 300, height: 24))
         keywordsField.placeholderString = "Keywords (e.g., AI, Python, Rust)"
+        let existingKeywords = UserDefaults.standard.array(forKey: "savedKeywords") as? [String]
+        keywordsField.stringValue = existingKeywords?.joined(separator: ", ") ?? ""
         
         let topicsField = NSTextField(frame: NSRect(x: 0, y: 0, width: 300, height: 24))
         topicsField.placeholderString = "Topics (e.g., Programming, Science)"
+        let existingTopics = UserDefaults.standard.array(forKey: "savedTopics") as? [String]
+        topicsField.stringValue = existingTopics?.joined(separator: ", ") ?? ""
         
         stackView.addArrangedSubview(keywordsField)
         stackView.addArrangedSubview(topicsField)
@@ -105,10 +112,25 @@ class MenuBarController: NSObject {
         alert.addButton(withTitle: "Cancel")
         
         if alert.runModal() == .alertFirstButtonReturn {
-            let keywords = Set(keywordsField.stringValue.components(separatedBy: ",").map { $0.trimmingCharacters(in: .whitespaces) })
-            let topics = Set(topicsField.stringValue.components(separatedBy: ",").map { $0.trimmingCharacters(in: .whitespaces) })
+            let keywords = Set(keywordsField.stringValue.components(separatedBy: ",").map { $0.trimmingCharacters(in: .whitespaces) }.filter { !$0.isEmpty })
+            let topics = Set(topicsField.stringValue.components(separatedBy: ",").map { $0.trimmingCharacters(in: .whitespaces) }.filter { !$0.isEmpty })
+            
+            print("Applying new filters - Keywords: \(keywords), Topics: \(topics)")
             hnService.setFilters(keywords: keywords, topics: topics)
-            refreshNews()
+            
+            // Force a complete refresh of stories
+            Task {
+                do {
+                    print("Fetching fresh stories with new filters...")
+                    stories = try await hnService.fetchTopStories()
+                    DispatchQueue.main.async { [weak self] in
+                        print("Updating menu with filtered stories...")
+                        self?.updateMenu()
+                    }
+                } catch {
+                    print("Error refreshing stories: \(error)")
+                }
+            }
         }
     }
 } 

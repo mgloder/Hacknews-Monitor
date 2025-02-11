@@ -8,6 +8,14 @@ struct News_MonitorApp: App {
         Settings {
             EmptyView()
         }
+        .commands {
+            // Add Quit menu item
+            CommandGroup(replacing: .appInfo) {
+                Button("Quit News Monitor") {
+                    NSApplication.shared.terminate(nil)
+                }.keyboardShortcut("q", modifiers: .command)
+            }
+        }
     }
 }
 

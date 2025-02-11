@@ -16,9 +16,33 @@ class HNService {
     private var keywords: Set<String> = []
     private var topics: Set<String> = []
     
+    init() {
+        // Load saved filters
+        loadSavedFilters()
+    }
+    
+    private func loadSavedFilters() {
+        let defaults = UserDefaults.standard
+        if let savedKeywords = defaults.array(forKey: "savedKeywords") as? [String] {
+            self.keywords = Set(savedKeywords)
+        }
+        if let savedTopics = defaults.array(forKey: "savedTopics") as? [String] {
+            self.topics = Set(savedTopics)
+        }
+        print("Loaded filters - Keywords: \(keywords), Topics: \(topics)")
+    }
+    
     func setFilters(keywords: Set<String>, topics: Set<String>) {
         self.keywords = keywords
         self.topics = topics
+        
+        // Save filters
+        let defaults = UserDefaults.standard
+        defaults.set(Array(keywords), forKey: "savedKeywords")
+        defaults.set(Array(topics), forKey: "savedTopics")
+        defaults.synchronize()
+        
+        print("Saved filters - Keywords: \(keywords), Topics: \(topics)")
     }
     
     func fetchTopStories() async throws -> [HNStory] {
@@ -56,18 +80,45 @@ class HNService {
     }
     
     private func filterStories(_ stories: [HNStory]) -> [HNStory] {
-        guard !keywords.isEmpty || !topics.isEmpty else { return stories }
-        
-        return stories.filter { story in
-            let matchesKeyword = keywords.isEmpty || keywords.contains { keyword in
-                story.title.lowercased().contains(keyword.lowercased())
-            }
-            
-            let matchesTopic = topics.isEmpty || topics.contains { topic in
-                story.title.lowercased().contains(topic.lowercased())
-            }
-            
-            return matchesKeyword || matchesTopic
+        guard !keywords.isEmpty || !topics.isEmpty else { 
+            print("No filters applied, returning all stories")
+            return stories 
         }
+        
+        let filteredStories = stories.filter { story in
+            // Only include stories that match at least one keyword or topic
+            if !keywords.isEmpty {
+                let matchesKeyword = keywords.contains { keyword in
+                    story.title.lowercased().contains(keyword.lowercased())
+                }
+                if !matchesKeyword {
+                    return false
+                }
+            }
+            
+            if !topics.isEmpty {
+                let matchesTopic = topics.contains { topic in
+                    story.title.lowercased().contains(topic.lowercased())
+                }
+                if !matchesTopic {
+                    return false
+                }
+            }
+            
+            return true
+        }
+        
+        print("Filtering results:")
+        print("- Original stories count: \(stories.count)")
+        print("- Filtered stories count: \(filteredStories.count)")
+        print("- Applied keywords: \(keywords)")
+        print("- Applied topics: \(topics)")
+        
+        // Print first few filtered stories for debugging
+        filteredStories.prefix(5).forEach { story in
+            print("- Matched story: \(story.title)")
+        }
+        
+        return filteredStories
     }
 } 
