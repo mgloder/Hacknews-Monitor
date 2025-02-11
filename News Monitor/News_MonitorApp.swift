@@ -1,32 +1,29 @@
-//
-//  News_MonitorApp.swift
-//  News Monitor
-//
-//  Created by Yan Xu on 11/2/2025.
-//
-
 import SwiftUI
-import SwiftData
 
 @main
 struct News_MonitorApp: App {
-    var sharedModelContainer: ModelContainer = {
-        let schema = Schema([
-            Item.self,
-        ])
-        let modelConfiguration = ModelConfiguration(schema: schema, isStoredInMemoryOnly: false)
-
-        do {
-            return try ModelContainer(for: schema, configurations: [modelConfiguration])
-        } catch {
-            fatalError("Could not create ModelContainer: \(error)")
-        }
-    }()
-
+    @NSApplicationDelegateAdaptor(AppDelegate.self) var appDelegate
+    
     var body: some Scene {
-        WindowGroup {
-            ContentView()
+        Settings {
+            EmptyView()
         }
-        .modelContainer(sharedModelContainer)
+    }
+}
+
+class AppDelegate: NSObject, NSApplicationDelegate {
+    private var menuBarController: MenuBarController?
+    
+    func applicationDidFinishLaunching(_ notification: Notification) {
+        print("App launching...")
+        
+        // Ensure we're on the main thread when creating UI elements
+        DispatchQueue.main.async { [weak self] in
+            self?.menuBarController = MenuBarController()
+            print("MenuBarController initialized")
+        }
+        
+        // Hide dock icon
+        NSApp.setActivationPolicy(.accessory)
     }
 }

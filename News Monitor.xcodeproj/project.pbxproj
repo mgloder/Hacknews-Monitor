@@ -6,6 +6,10 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		47BFEA242D5AEE9E00FD319E /* info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 47BFEA232D5AEE9E00FD319E /* info.plist */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		47BFE9FF2D5AE7DD00FD319E /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -27,6 +31,7 @@
 		47BFE9EB2D5AE7DB00FD319E /* News Monitor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "News Monitor.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		47BFE9FE2D5AE7DD00FD319E /* News MonitorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "News MonitorTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		47BFEA082D5AE7DD00FD319E /* News MonitorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "News MonitorUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		47BFEA232D5AEE9E00FD319E /* info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -75,6 +80,7 @@
 		47BFE9E22D5AE7DB00FD319E = {
 			isa = PBXGroup;
 			children = (
+				47BFEA232D5AEE9E00FD319E /* info.plist */,
 				47BFE9ED2D5AE7DB00FD319E /* News Monitor */,
 				47BFEA012D5AE7DD00FD319E /* News MonitorTests */,
 				47BFEA0B2D5AE7DD00FD319E /* News MonitorUITests */,
@@ -212,6 +218,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				47BFEA242D5AEE9E00FD319E /* info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
