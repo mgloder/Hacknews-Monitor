@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "C87321C9-AC6C-46EF-9087-0C848EA96702"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "4E624E88-4BAF-408F-9EDB-5650BFF6B4AE"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "News Monitor/HNService.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "52"
+            endingLineNumber = "52"
+            landmarkName = "fetchTopStories()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "10D6C1A7-6DCB-4FCD-AD35-656F240E9565"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "News Monitor/HNService.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "54"
+            endingLineNumber = "54"
+            landmarkName = "fetchTopStories()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "10D6C1A7-6DCB-4FCD-AD35-656F240E9565 - 45e7d7c8476077d4"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(3) suspend resume partial function for News_Monitor.HNService.fetchTopStories() async throws -&gt; Swift.Array&lt;News_Monitor.HNStory&gt;"
+                  moduleName = "News Monitor.debug.dylib"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/machinedoll/project/News%20Monitor/News%20Monitor/HNService.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "55"
+                  endingLineNumber = "55">
+               </Location>
+               <Location
+                  uuid = "10D6C1A7-6DCB-4FCD-AD35-656F240E9565 - c1593b4a20978881"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(4) await resume partial function for News_Monitor.HNService.fetchTopStories() async throws -&gt; Swift.Array&lt;News_Monitor.HNStory&gt;"
+                  moduleName = "News Monitor.debug.dylib"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/machinedoll/project/News%20Monitor/News%20Monitor/HNService.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "55"
+                  endingLineNumber = "55">
+               </Location>
+               <Location
+                  uuid = "10D6C1A7-6DCB-4FCD-AD35-656F240E9565 - f14c37b0421ca2a"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(5) suspend resume partial function for News_Monitor.HNService.fetchTopStories() async throws -&gt; Swift.Array&lt;News_Monitor.HNStory&gt;"
+                  moduleName = "News Monitor.debug.dylib"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/machinedoll/project/News%20Monitor/News%20Monitor/HNService.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "55"
+                  endingLineNumber = "55">
+               </Location>
+               <Location
+                  uuid = "10D6C1A7-6DCB-4FCD-AD35-656F240E9565 - 36882eaad9ef9e20"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(7) suspend resume partial function for News_Monitor.HNService.fetchTopStories() async throws -&gt; Swift.Array&lt;News_Monitor.HNStory&gt;"
+                  moduleName = "News Monitor.debug.dylib"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/machinedoll/project/News%20Monitor/News%20Monitor/HNService.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "55"
+                  endingLineNumber = "55">
+               </Location>
+               <Location
+                  uuid = "10D6C1A7-6DCB-4FCD-AD35-656F240E9565 - b796d75461010d53"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (inout Swift.ThrowingTaskGroup&lt;Swift.Optional&lt;News_Monitor.HNStory&gt;, Swift.Error&gt;) async throws -&gt; Swift.Array&lt;News_Monitor.HNStory&gt; in News_Monitor.HNService.fetchTopStories() async throws -&gt; Swift.Array&lt;News_Monitor.HNStory&gt;"
+                  moduleName = "News Monitor.debug.dylib"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/machinedoll/project/News%20Monitor/News%20Monitor/HNService.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "55"
+                  endingLineNumber = "55">
+               </Location>
+               <Location
+                  uuid = "10D6C1A7-6DCB-4FCD-AD35-656F240E9565 - c3253d568006aa23"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(1) suspend resume partial function for closure #1 (inout Swift.ThrowingTaskGroup&lt;Swift.Optional&lt;News_Monitor.HNStory&gt;, Swift.Error&gt;) async throws -&gt; Swift.Array&lt;News_Monitor.HNStory&gt; in News_Monitor.HNService.fetchTopStories() async throws -&gt; Swift.Array&lt;News_Monitor.HNStory&gt;"
+                  moduleName = "News Monitor.debug.dylib"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/machinedoll/project/News%20Monitor/News%20Monitor/HNService.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "55"
+                  endingLineNumber = "55">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "87F02251-2B91-4874-8958-121D25EF4A2A"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "News Monitor/HNService.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "55"
+            endingLineNumber = "55"
+            landmarkName = "fetchTopStories()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "87F02251-2B91-4874-8958-121D25EF4A2A - 45e7d7c8476077d4"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(3) suspend resume partial function for News_Monitor.HNService.fetchTopStories() async throws -&gt; Swift.Array&lt;News_Monitor.HNStory&gt;"
+                  moduleName = "News Monitor.debug.dylib"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/machinedoll/project/News%20Monitor/News%20Monitor/HNService.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "55"
+                  endingLineNumber = "55">
+               </Location>
+               <Location
+                  uuid = "87F02251-2B91-4874-8958-121D25EF4A2A - c1593b4a20978881"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(4) await resume partial function for News_Monitor.HNService.fetchTopStories() async throws -&gt; Swift.Array&lt;News_Monitor.HNStory&gt;"
+                  moduleName = "News Monitor.debug.dylib"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/machinedoll/project/News%20Monitor/News%20Monitor/HNService.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "55"
+                  endingLineNumber = "55">
+               </Location>
+               <Location
+                  uuid = "87F02251-2B91-4874-8958-121D25EF4A2A - f14c37b0421ca2a"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(5) suspend resume partial function for News_Monitor.HNService.fetchTopStories() async throws -&gt; Swift.Array&lt;News_Monitor.HNStory&gt;"
+                  moduleName = "News Monitor.debug.dylib"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/machinedoll/project/News%20Monitor/News%20Monitor/HNService.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "55"
+                  endingLineNumber = "55">
+               </Location>
+               <Location
+                  uuid = "87F02251-2B91-4874-8958-121D25EF4A2A - 36882eaad9ef9e20"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(7) suspend resume partial function for News_Monitor.HNService.fetchTopStories() async throws -&gt; Swift.Array&lt;News_Monitor.HNStory&gt;"
+                  moduleName = "News Monitor.debug.dylib"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/machinedoll/project/News%20Monitor/News%20Monitor/HNService.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "55"
+                  endingLineNumber = "55">
+               </Location>
+               <Location
+                  uuid = "87F02251-2B91-4874-8958-121D25EF4A2A - b796d75461010d53"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (inout Swift.ThrowingTaskGroup&lt;Swift.Optional&lt;News_Monitor.HNStory&gt;, Swift.Error&gt;) async throws -&gt; Swift.Array&lt;News_Monitor.HNStory&gt; in News_Monitor.HNService.fetchTopStories() async throws -&gt; Swift.Array&lt;News_Monitor.HNStory&gt;"
+                  moduleName = "News Monitor.debug.dylib"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/machinedoll/project/News%20Monitor/News%20Monitor/HNService.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "55"
+                  endingLineNumber = "55">
+               </Location>
+               <Location
+                  uuid = "87F02251-2B91-4874-8958-121D25EF4A2A - c3253d568006aa23"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(1) suspend resume partial function for closure #1 (inout Swift.ThrowingTaskGroup&lt;Swift.Optional&lt;News_Monitor.HNStory&gt;, Swift.Error&gt;) async throws -&gt; Swift.Array&lt;News_Monitor.HNStory&gt; in News_Monitor.HNService.fetchTopStories() async throws -&gt; Swift.Array&lt;News_Monitor.HNStory&gt;"
+                  moduleName = "News Monitor.debug.dylib"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/machinedoll/project/News%20Monitor/News%20Monitor/HNService.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "55"
+                  endingLineNumber = "55">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "F20310B3-5F74-47F1-9113-0B038E3FF598"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "News Monitor/HNService.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "70"
+            endingLineNumber = "70"
+            landmarkName = "fetchTopStories()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "F20310B3-5F74-47F1-9113-0B038E3FF598 - af92fc53ae616030"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(3) suspend resume partial function for closure #1 (inout Swift.ThrowingTaskGroup&lt;Swift.Optional&lt;News_Monitor.HNStory&gt;, Swift.Error&gt;) async throws -&gt; Swift.Array&lt;News_Monitor.HNStory&gt; in News_Monitor.HNService.fetchTopStories() async throws -&gt; Swift.Array&lt;News_Monitor.HNStory&gt;"
+                  moduleName = "News Monitor.debug.dylib"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/machinedoll/project/News%20Monitor/News%20Monitor/HNService.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "70"
+                  endingLineNumber = "70">
+               </Location>
+               <Location
+                  uuid = "F20310B3-5F74-47F1-9113-0B038E3FF598 - 5cbb12a08b3fd010"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #2 (News_Monitor.HNStory, News_Monitor.HNStory) -&gt; Swift.Bool in closure #1 (inout Swift.ThrowingTaskGroup&lt;Swift.Optional&lt;News_Monitor.HNStory&gt;, Swift.Error&gt;) async throws -&gt; Swift.Array&lt;News_Monitor.HNStory&gt; in News_Monitor.HNService.fetchTopStories() async throws -&gt; Swift.Array&lt;News_Monitor.HNStory&gt;"
+                  moduleName = "News Monitor.debug.dylib"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/machinedoll/project/News%20Monitor/News%20Monitor/HNService.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "70"
+                  endingLineNumber = "70">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
